@@ -1,3 +1,6 @@
+/*======= 
+Global Styling
+==============*/
 * {
     box-sizing: border-box;
 }
@@ -27,7 +30,7 @@ main {
     min-height: calc(100vh - 20vh);
 }
 
-/*pseudo-selectors*/
+/*====== pseudo-selectors ======*/
 
 #main-header {
     padding: .53em 0;
@@ -190,7 +193,11 @@ main {
     margin: 0 auto;
 }
 
-/*small screeens*/
+/*===========
+Media Queries
+===============*/
+
+/*====== small screeens ======*/
 @media only screen and (max-width: 768px) {
     .container {
         width: 100%;
