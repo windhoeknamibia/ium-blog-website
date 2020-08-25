@@ -139,6 +139,10 @@ main {
     margin-left: 6px;
 }
 
+avatar:hover {
+	transform: scale(2);
+}
+
 .title {
     margin-left: 12px;
     font-size: 16px;
