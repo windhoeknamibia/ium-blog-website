@@ -1,33 +1,132 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
   <meta charset="UFT-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IUM STUDENT BLOGS</title>
-  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" data-auto-a11y="true"></script>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" data-auto-a11y="true"></script>
   <link rel="stylesheet" href="./main.css">
 </head>
 <body>
 <main>
   <header id="main-header">
       <div class="wrapper clearfix">
-          <a href="https://www.ium.edu.na"><img class="logo" src="https://elearn.ium.edu.na/pluginfile.php/1/core_admin/logo/0x150/1586446394/IUM%20Logo%202017-01.png" alt=""></a>
+          <a href="https://www.ium.edu.na"><img class="logo" src="https://elearn.ium.edu.na/pluginfile.php/1/core_admin/logo/0x150/1586446394/IUM%20Logo%202017-01.png" alt="ium-logo"></a>
           <ul class="main-nav">
-              <li><a id="home" href="./index.html">HOME</a></li>
+              <li><a id="home" href="./index.html">BLOG</a></li>
               <li><a href="#">ABOUT</a></li>
-              <li><a href="#">LOGIN</a></li>
-              <li><a href="#">REGISTER</a></li>
+              <li><a class="call-out" href="#myModal" data-toggle="modal" data-target="#myModal">START WRITING</a></li>
           </ul>
       </div>
   </header>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header bg-info text-white">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Enhance your creative writing skills!</h4>
+          <h4 class="modal-title">Improve your vocabulary and become a better student</h4>
+        </div>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+              <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+        <div class="modal-body">
+          <!-- Registration form -->
+          <form data-netlify="true">
+            <div class="form-group">
+              <label for="fullname">Full Name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+            </div>
+            <div class="form-group">
+              <label for="studentNumber">Student Number</label>
+              <input type="text" class="form-control" id="studentNumber" placeholder="Student Number">
+            </div>
+            <div class="form-group">
+              <label for="role">Program of Study</label>
+              <input type="text" class="form-control" id="qualificationType" placeholder="Program of Study">
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck1">
+              <label class="custom-control-label" for="education">Education</label>
+            </div>
+            <div class="form-group">
+              <p style="margin: 3px 0; font-weight: bold">Year</p>
+              <select class="custom-select mb-3 form-control">
+              <option value="1" selected>One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="3">Four</option>
+              <option value="3">Postgraduate</option>
+            </select>
+            </div>
+            <hr class="my-4">
+            <div class="form-group">
+              <label for="role">Hobbies and Interests</label>
+              <input type="text" class="form-control" id="qualificationType">
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+          </form>
+          <!-- Registration form ends -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      <!-- end of modal content -->
+    </div>
+  </div>
+  <!-- End of modal -->
+  <!-- Writings -->
   <div class="container">
       <h2 class="writings">Writings</h2>
       <div id="search-container">
           <input id="search-box" type="text" name="search" placeholder="Search articles..."><a href="#"><i class="fas fa-search icon"></i></a>
       </div>
       <div class="articles">
+      <div class="story-liner">
+          <div class="details"><time>12-08-2020</time><a class="title" href="#">  lockdown Lorem ipsum dolor sit amet.</a></div>
+          <div class="by-line"><a class="author" href="#"> By | Author Name </a><img class="avatar" src="https://i.insider.com/5d922a0d2e22af22cb0c0235?width=1100&format=jpeg&auto=webp" alt=""></div>
+      </div>
+      <div class="story-liner">
+          <div class="details"><time>12-08-2020</time><a class="title" href="#"> How to be prodet.</a></div>
+          <div class="by-line"><a class="author" href="#"> By | Author Name </a><img class="avatar" src="http://lorempixel.com/400/200" alt=""></div>
+      </div>
+      <div class="story-liner">
+          <div class="details"><time>12-08-2020</time><a class="title" href="#"> How to be productive during lockdown stgtr tykiuri</a></div>
+          <div class="by-line"><a class="author" href="#"> By | Author Name </a><img class="avatar" src="https://cdn.britannica.com/76/181876-050-9786BBEA/Hifikepunye-Pohamba.jpg" alt=""></div>
+      </div>
+      <div class="story-liner">
+          <div class="details"><time>12-08-2020</time><a class="title" href="#">  lockdown Lorem ipsum dolor sit amet.</a></div>
+          <div class="by-line"><a class="author" href="#"> By | Author Name </a><img class="avatar" src="https://i.insider.com/5d922a0d2e22af22cb0c0235?width=1100&format=jpeg&auto=webp" alt=""></div>
+      </div>
+      <div class="story-liner">
+          <div class="details"><time>12-08-2020</time><a class="title" href="#"> How to be prodet.</a></div>
+          <div class="by-line"><a class="author" href="#"> By | Author Name </a><img class="avatar" src="http://lorempixel.com/400/200" alt=""></div>
+      </div>
+      <div class="story-liner">
+          <div class="details"><time>12-08-2020</time><a class="title" href="#"> How to be productive during lockdown stgtr tykiuri</a></div>
+          <div class="by-line"><a class="author" href="#"> By | Author Name </a><img class="avatar" src="https://cdn.britannica.com/76/181876-050-9786BBEA/Hifikepunye-Pohamba.jpg" alt=""></div>
+      </div>
+      <div class="story-liner">
+          <div class="details"><time>12-08-2020</time><a class="title" href="#">  lockdown Lorem ipsum dolor sit amet.</a></div>
+          <div class="by-line"><a class="author" href="#"> By | Author Name </a><img class="avatar" src="https://i.insider.com/5d922a0d2e22af22cb0c0235?width=1100&format=jpeg&auto=webp" alt=""></div>
+      </div>
+      <div class="story-liner">
+          <div class="details"><time>12-08-2020</time><a class="title" href="#"> How to be prodet.</a></div>
+          <div class="by-line"><a class="author" href="#"> By | Author Name </a><img class="avatar" src="http://lorempixel.com/400/200" alt=""></div>
+      </div>
+  </div>
+      <button id="readMore" class="more-articles">Load more articles</button>
+      <div class="articles section2">
       <div class="story-liner">
           <div class="details"><time>12-08-2020</time><a class="title" href="#"> How to be productive during lockdown stgtr tykiuri</a></div>
           <div class="by-line"><a class="author" href="#"> By | Author Name </a><img class="avatar" src="https://cdn.britannica.com/76/181876-050-9786BBEA/Hifikepunye-Pohamba.jpg" alt=""></div>
@@ -65,7 +164,6 @@
           <div class="by-line"><a class="author" href="#"> By | Author Name </a><img class="avatar" src="http://lorempixel.com/400/200" alt=""></div>
       </div>
   </div>
-      <div class="more-link"><p><a href="#">Page 2 ►</a></p></div>
   </main>
   <footer id="main-footer">
      <small style="font-size: 12px; font-weight: 900; color: #771f1f">Copyright © 2020 International University of Management</small>
@@ -73,3 +171,4 @@
   </footer>
 </body>
 </html>
+  
