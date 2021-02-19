@@ -1,8 +1,12 @@
 /*======= 
-Global Styling
+Global Styles
 ==============*/
-* {
+*, *::before, *::after {
   box-sizing: border-box;
+}
+img  {
+  box-sizing: content-box;
+  object-fit: cover;
 }
 
 html {
@@ -81,11 +85,6 @@ ul {
   color: #771f1f;
 }
 
-
-.story-liner:last-child {
-  border-bottom: none;
-}
-
 /*===== Writings Header =========*/
 .writings {
   font-size: 30px;
@@ -111,7 +110,7 @@ ul {
 }
 
 #search-box:focus {
-  border-bottom: .5px solid #771f1f;
+  border: 1px solid #771f1f;
   outline: none;
 }
 
@@ -126,7 +125,7 @@ ul {
 #search-box + a:hover {
   background-color: #ddd;
   transform: scale(1.05);
-  border: 2px solid #771f1f;
+  border: 1px solid #771f1f;
 }
 /*== icon ===*/
 .icon{color: #fff}
@@ -137,6 +136,7 @@ ul {
   padding: 0px;
   margin-top: 20px;
 }
+.section2 {display: none;}
 /*== Story Line ===*/
 .story-liner {
   border-top: 0.9px solid #f1ecec;
@@ -144,6 +144,9 @@ ul {
   margin: auto;
   padding: 12px;
   border-bottom: 0.9px solid #f1ecec;
+}
+.story-liner:last-child {
+  border-bottom: none;
 }
 .details {
   display: flex !important;
@@ -215,7 +218,10 @@ ul {
 #home {
   color: #771f1f;
 }
-
+.main-nav a:hover {
+  border-bottom: 1px #771f1f solid;
+  border-top: 1px #771f1f solid;
+}
 .main-nav a:active {
   color: #771F1F;
 }
@@ -244,8 +250,19 @@ ul {
     overflow: auto;
 }
 
-.more-link {
-  font-weight: 800;
+.more-articles {
+  display: flex;
+  justify-content: center;
+  padding: 8px 6px;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: #001154;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 /*===========
@@ -253,7 +270,7 @@ Media Queries
 ===============*/
 
 
-/*==== large devices sizes ==========*/
+/*==== large devices ==========*/
 @media only screen and (min-width: 768px) {
   body {
     font-size: 16px;

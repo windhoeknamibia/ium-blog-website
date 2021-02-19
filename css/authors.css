@@ -1,0 +1,189 @@
+/*======= 
+Global Styling
+==============*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+img  {
+  box-sizing: content-box;
+  object-fit: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: .5s ease-in-out;
+}
+
+body {
+  margin: 0;
+  font-size: 12px;
+  background-color: #fff;
+  font-family: 'Nunito', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 20vh;
+  margin-top: auto;
+  border-top: .5px solid #f1ecec;
+}
+
+/*== base selectors ==*/
+.prenav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px;
+}
+.prenav img {
+  max-width: 150px;
+}
+@media only screen and (min-width: 768px) {
+  .prenav img {
+    max-width: 200px;
+  }
+}
+.prenav .call-out {
+  text-decoration: none;
+  background: #771F1F;
+  padding: 8px 8px;
+  font-weight: 800;
+  margin-right: 4px;
+  color: #fff;
+  border-style: groove;
+  border-color:  #fff;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 1.2em;
+  background-color: #e0e0e0 !important;
+}
+.container img {
+  max-width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.author-name {
+  margin-bottom: 0;
+  font-size: 2rem;
+  opacity: .8;
+}
+.about-author {
+  width: 65%;
+  margin: 0 0 8px 0;
+  letter-spacing: 0;
+  font-size: 1.2rem;
+  line-height: 1.15em;
+  opacity: .8;
+}
+.nav {
+  display: flex;
+  margin-top: 0;
+  list-style-type: none;
+  padding: 0;
+}
+.nav li {
+  background-color: #eee;
+  padding: .1em .2em;
+  margin: 0 6.66px 0 0;
+  border-radius: 3px;
+}
+.nav li:last-child{
+  margin-right: 0;
+}
+.nav a {
+  display: grid;
+  place-items: center;
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/*===== ========*/ 
+.col {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.story-liner:first-child {
+  border-top: none;
+}
+.story-liner {
+  border-top: 0.9px solid #f1ecec;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 12px;
+}
+.details {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center;
+}
+.details time {
+  color: #aaa;
+  margin: 0px 6px;
+}
+
+.by-line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px;
+  margin-top: 8px;
+}
+
+/*======== Author name ==================*/
+.author {
+  text-decoration: none;
+  font-weight: 700;
+  color: #771F1F !important;
+}
+
+/*=== Author name hover effects=====*/
+.author:hover {
+  background-color: #eee;
+}
+/*======== Author image ======*/
+.avatar {
+  max-width: 35px;
+  height: 35px;
+  background-size: cover;
+  border-radius: 50%;
+  border: .5px #121212 solid;
+  margin-left: 6.66px;
+  transition: .5s;
+}
+
+.avatar:hover {
+	transform: scale(1.5);
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #771F1F;
+}
+.title::before {
+  content: '-';
+  color: #aaa;
+}
