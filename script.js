@@ -1,37 +1,38 @@
-// ==== SELECT DOM ELEMENTS =========//
+// // ==== SELECT DOM ELEMENTS =========//
 
-const btn = document.getElementById('readMore');
-const searchBtn = document.getElementById('search-box');
+// // const btn = document.getElementById('readMore');
+// // const searchBtn = document.getElementById('search-box');
 
-// ==== CREATE TEMPLATE ELEMENTS ======//
+// // ==== CREATE BUTTON ELEMENTS ======//
+// const createButtonElements = () => {
+//   const btnTemplate = document.createElement('button');
+//   const btnText = document.createTextNode('Load more articles');
+//   btnTemplate.appendChild(btnText);
+//   btnTemplate.setAttribute('id', 'readMore');
+//   btnTemplate.className = 'more-articles';
+// }
 
-const btnTemplate = document.createElement('button');
-const btnText = document.createTextNode('Load more articles');
-btnTemplate.appendChild(btnText);
-btnTemplate.setAttribute('id', 'readMore');
-btnTemplate.className = 'more-articles';
+// // ====== FUNCTIONS ======//
 
-// ====== FUNCTIONS ======//
+// const displayNextSection = (e) => {
+//   const sec2 = document.querySelector('.section2')
+//   sec2.style.display = 'block';
+//   sec2.appendChild(btnTemplate);
 
-const displayNextSection = (e) => {
-  const sec2 = document.querySelector('.section2')
-  sec2.style.display = 'block';
-  sec2.appendChild(btnTemplate);
+//   //-- remove button ---//
+//   e.currentTarget.remove();
 
-  //-- remove button ---//
-  e.currentTarget.remove();
+// }
 
-}
+// const searchArticles = (e) => {
+//   console.log(e.currentTarget.value)
+// }
 
-const searchArticles = (e) => {
-  console.log(e.currentTarget.value)
-}
+// // ======= EVENTS ============//
+// // button functinality disabled
+// // btn.addEventListener('click', displayNextSection)
+// // searchBtn.addEventListener('keyup', searchArticles)
 
-// ======= EVENTS ============//
-// button functinality disabled
-// btn.addEventListener('click', displayNextSection)
-searchBtn.addEventListener('keyup', searchArticles)
+// //===== DEBUGGING SECTION =====//
 
-//===== DEBUGGING SECTION =====//
-
-// console.log(searchBtn);
+// // console.log(searchBtn);
